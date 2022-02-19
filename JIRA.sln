@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIRA", "JIRA\JIRA.csproj", "{7E7287F7-9D69-4B4A-B256-ACECDE00E3D5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3202C0C6-B33C-4898-9261-C8EAB444B2BB} = {3202C0C6-B33C-4898-9261-C8EAB444B2BB}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIRA.Core", "JIRA.Core\JIRA.Core.csproj", "{4CE331D1-EFF4-44B8-B556-9B44E45519AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIRA.Model", "JIRA.Model\JIRA.Model.csproj", "{C6A61B09-006F-4BB7-B562-0240A8462B6B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4CE331D1-EFF4-44B8-B556-9B44E45519AF} = {4CE331D1-EFF4-44B8-B556-9B44E45519AF}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIRA.Bl", "JIRA.Bl\JIRA.Bl.csproj", "{FCB89611-BAC9-41B6-AD3D-9860CB97B5BC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C6A61B09-006F-4BB7-B562-0240A8462B6B} = {C6A61B09-006F-4BB7-B562-0240A8462B6B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIRA.Services", "JIRA.Services\JIRA.Services.csproj", "{3202C0C6-B33C-4898-9261-C8EAB444B2BB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FCB89611-BAC9-41B6-AD3D-9860CB97B5BC} = {FCB89611-BAC9-41B6-AD3D-9860CB97B5BC}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E7287F7-9D69-4B4A-B256-ACECDE00E3D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E7287F7-9D69-4B4A-B256-ACECDE00E3D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E7287F7-9D69-4B4A-B256-ACECDE00E3D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E7287F7-9D69-4B4A-B256-ACECDE00E3D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE331D1-EFF4-44B8-B556-9B44E45519AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE331D1-EFF4-44B8-B556-9B44E45519AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE331D1-EFF4-44B8-B556-9B44E45519AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE331D1-EFF4-44B8-B556-9B44E45519AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6A61B09-006F-4BB7-B562-0240A8462B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A61B09-006F-4BB7-B562-0240A8462B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A61B09-006F-4BB7-B562-0240A8462B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A61B09-006F-4BB7-B562-0240A8462B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCB89611-BAC9-41B6-AD3D-9860CB97B5BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB89611-BAC9-41B6-AD3D-9860CB97B5BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB89611-BAC9-41B6-AD3D-9860CB97B5BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB89611-BAC9-41B6-AD3D-9860CB97B5BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3202C0C6-B33C-4898-9261-C8EAB444B2BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3202C0C6-B33C-4898-9261-C8EAB444B2BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3202C0C6-B33C-4898-9261-C8EAB444B2BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3202C0C6-B33C-4898-9261-C8EAB444B2BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DC7D2CB-AA76-4C1F-9C50-CFABF862CAC3}
+	EndGlobalSection
+EndGlobal

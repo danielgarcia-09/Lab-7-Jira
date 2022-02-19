@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7e7287f7-9d69-4b4a-b256-acecde00e3d5": {
+      "ProjectGuid": "7e7287f7-9d69-4b4a-b256-acecde00e3d5",
+      "DisplayName": "JIRA",
+      "ColorIndex": 0
+    },
+    "4ce331d1-eff4-44b8-b556-9b44e45519af": {
+      "ProjectGuid": "4ce331d1-eff4-44b8-b556-9b44e45519af",
+      "DisplayName": "JIRA.Core",
+      "ColorIndex": 1
+    },
+    "c6a61b09-006f-4bb7-b562-0240a8462b6b": {
+      "ProjectGuid": "c6a61b09-006f-4bb7-b562-0240a8462b6b",
+      "DisplayName": "JIRA.Model",
+      "ColorIndex": 2
+    },
+    "fcb89611-bac9-41b6-ad3d-9860cb97b5bc": {
+      "ProjectGuid": "fcb89611-bac9-41b6-ad3d-9860cb97b5bc",
+      "DisplayName": "JIRA.Bl",
+      "ColorIndex": 3
+    },
+    "3202c0c6-b33c-4898-9261-c8eab444b2bb": {
+      "ProjectGuid": "3202c0c6-b33c-4898-9261-c8eab444b2bb",
+      "DisplayName": "JIRA.Services",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

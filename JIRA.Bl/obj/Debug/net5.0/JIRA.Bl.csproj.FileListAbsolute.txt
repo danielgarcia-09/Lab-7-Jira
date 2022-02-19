@@ -1,0 +1,17 @@
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\bin\Debug\net5.0\JIRA.Bl.deps.json
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\bin\Debug\net5.0\JIRA.Bl.dll
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\bin\Debug\net5.0\ref\JIRA.Bl.dll
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\bin\Debug\net5.0\JIRA.Bl.pdb
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\bin\Debug\net5.0\JIRA.Core.dll
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\bin\Debug\net5.0\JIRA.Model.dll
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\bin\Debug\net5.0\JIRA.Model.pdb
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\bin\Debug\net5.0\JIRA.Core.pdb
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\obj\Debug\net5.0\JIRA.Bl.csproj.AssemblyReference.cache
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\obj\Debug\net5.0\JIRA.Bl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\obj\Debug\net5.0\JIRA.Bl.AssemblyInfoInputs.cache
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\obj\Debug\net5.0\JIRA.Bl.AssemblyInfo.cs
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\obj\Debug\net5.0\JIRA.Bl.csproj.CoreCompileInputs.cache
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\obj\Debug\net5.0\JIRA.Bl.csproj.CopyComplete
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\obj\Debug\net5.0\JIRA.Bl.dll
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\obj\Debug\net5.0\ref\JIRA.Bl.dll
+C:\Users\danie\source\repos\JIRA\JIRA.Bl\obj\Debug\net5.0\JIRA.Bl.pdb

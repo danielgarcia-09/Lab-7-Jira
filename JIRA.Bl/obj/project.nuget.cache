@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2V9vvdDxbyk6m4gzZ/aLJMKvbol+A+fzKjQ7HfzHYbzHCW2PLGLdLCGS/NXQ4HqpA5VIbv8k7atMaKG6em7uJA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\danie\\source\\repos\\JIRA\\JIRA.Bl\\JIRA.Bl.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
