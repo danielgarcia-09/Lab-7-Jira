@@ -3,6 +3,7 @@ using JIRA.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace JIRA.Controllers
@@ -19,13 +20,13 @@ namespace JIRA.Controllers
         }
        
         [HttpGet]
-        public async Task<string> GetIssues()
+        public async Task<List<IssueDto>> GetIssues()
         {
             return await _httpService.GetIssues();
         }
 
         [HttpGet("{id}")]
-        public async Task<string> GetIssueById(string id)
+        public async Task<IssueDto> GetIssueById(string id)
         {
             return await _httpService.GetIssueById(id);
         }
@@ -45,7 +46,7 @@ namespace JIRA.Controllers
         [HttpPut("assignIssue/{id}")]
         public async Task<string> AssignIssueToUser(string id, [FromBody] string name)
         {
-            return await _httpService.AssignIssueToUser(id, name);
+            return await _httpService.AssignIssueToUser(id, name.ToString());
         }
 
 

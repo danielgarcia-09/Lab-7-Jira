@@ -3,8 +3,10 @@ using JIRA.Core.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -15,8 +17,8 @@ namespace JIRA.Services
     public interface IHttpService
     {
         Task<string> CreateIssue(IssueDto dto);
-        Task<string> GetIssues();
-        Task<string> GetIssueById(string id);
+        Task<List<IssueDto>> GetIssues();
+        Task<IssueDto> GetIssueById(string id);
         Task<string> EditIssue(string id, IssueDto dto);
         Task<string> AssignIssueToUser(string id, string name);
         Task<string> DeleteIssue(string id);
@@ -48,34 +50,57 @@ namespace JIRA.Services
             _httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
         }
 
-        public async Task<string> GetIssues()
+        public async Task<List<IssueDto>> GetIssues()
         {
             var response = await _httpClient.GetAsync($"rest/api/2/search");
 
             if (response.IsSuccessStatusCode)
             {
-                string result = response.Content.ReadAsStringAsync().Result;
-                return result;
+                var result = response.Content.ReadAsStream();
+                var streamReader = await new StreamReader(result).ReadToEndAsync();
+                var data = JObject.Parse(streamReader)["issues"].AsQueryable();
+
+                var issuesList = new List<IssueDto>();
+
+                foreach(var issue in data)
+                {
+                    issuesList.Add( new IssueDto()
+                    {
+                        Key = issue["key"].ToString(),
+                        Summary = issue["fields"]["summary"].ToString(),
+                        Description = issue["fields"]["description"].ToString()
+                    });
+                }
+
+                return issuesList;
             }
             else
             {
-                return response.StatusCode.ToString();
+                return null;
             }
         }
 
-        public async Task<string> GetIssueById(string id)
+        public async Task<IssueDto> GetIssueById(string id)
         {
 
             var response = await _httpClient.GetAsync($"rest/api/2/issue/{id}");
 
             if (response.IsSuccessStatusCode)
             {
-                string result = response.Content.ReadAsStringAsync().Result;
-                return result;
+                var result = response.Content.ReadAsStream();
+                var streamReader = await new StreamReader(result).ReadToEndAsync();
+                var issue = JObject.Parse(streamReader);
+
+                return new IssueDto()
+                {
+                    Key = issue["key"].ToString(),
+                    Summary = issue["fields"]["summary"].ToString(),
+                    Description = issue["fields"]["description"].ToString()
+                };
             }
             else
             {
-                return response.StatusCode.ToString();
+                return null;
             }
         }
 

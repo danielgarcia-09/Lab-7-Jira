@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuDfz0sWRIEyH/1pWNX8u0gAAAAACAAAAAAAQZgAAAAEAACAAAAAXGi4wiygkOWDccliSXax6/flC0I8X197JlIVfQh2C1gAAAAAOgAAAAAIAACAAAADTrNKfl8eegUYCBh1uYUjPy2kHQGJgSEYpuvOH78OlGoAAAAA+m2sQ87y29o4PJQk/KO4o41ZhiNzk11pSKLWa5bLNcAwJSpY8X93ay0xfjdbUpZzDnM/JynZWCQ5O1EmXio5056v4MAfOtdv6CdmAvxBcVOQrlRMKBkv4H8qpKR7zR7EKEDxfQCcvXv/PqAhqcAFr7B/3r16RAZSW0CjMVD7DqEAAAABjQzTPGulxkSnCy56JE8h8bHFx5XBRzgw9ufXkhNYEKCsF9EbUj/zg85oo8PDLKrtvHKRWqEE989I5hdyjqjEu</EncryptedPassword>
+    <_PublishTargetUrl>ftp://waws-prod-bn1-147.ftp.azurewebsites.windows.net/site/wwwroot</_PublishTargetUrl>
+    <History>True|2022-02-19T18:07:01.8389899Z;False|2022-02-19T14:05:37.8910996-04:00;False|2022-02-19T14:05:00.5890597-04:00;False|2022-02-19T13:59:05.3019578-04:00;False|2022-02-19T13:58:25.4384384-04:00;True|2022-02-19T13:55:41.9910448-04:00;False|2022-02-19T13:54:20.9753603-04:00;True|2022-02-19T13:08:44.5796953-04:00;False|2022-02-19T13:07:55.9121558-04:00;False|2022-02-19T13:05:34.7138650-04:00;False|2022-02-19T13:04:23.8411146-04:00;False|2022-02-19T13:03:53.6883394-04:00;False|2022-02-19T13:03:05.5376152-04:00;True|2022-02-19T12:58:17.7127489-04:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>02/18/2022 17:00:59</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>02/19/2022 13:02:29</publishTime>
+    </File>
+    <File Include="JIRA.Bl.dll">
+      <publishTime>02/19/2022 12:57:29</publishTime>
+    </File>
+    <File Include="JIRA.Bl.pdb">
+      <publishTime>02/19/2022 12:57:29</publishTime>
+    </File>
+    <File Include="JIRA.Core.dll">
+      <publishTime>02/19/2022 12:57:25</publishTime>
+    </File>
+    <File Include="JIRA.Core.pdb">
+      <publishTime>02/19/2022 12:57:25</publishTime>
+    </File>
+    <File Include="JIRA.deps.json">
+      <publishTime>02/19/2022 14:06:54</publishTime>
+    </File>
+    <File Include="JIRA.dll">
+      <publishTime>02/19/2022 14:06:52</publishTime>
+    </File>
+    <File Include="JIRA.exe">
+      <publishTime>02/19/2022 14:06:52</publishTime>
+    </File>
+    <File Include="JIRA.Model.dll">
+      <publishTime>02/19/2022 12:57:29</publishTime>
+    </File>
+    <File Include="JIRA.Model.pdb">
+      <publishTime>02/19/2022 12:57:29</publishTime>
+    </File>
+    <File Include="JIRA.pdb">
+      <publishTime>02/19/2022 14:06:52</publishTime>
+    </File>
+    <File Include="JIRA.runtimeconfig.json">
+      <publishTime>02/19/2022 12:57:34</publishTime>
+    </File>
+    <File Include="JIRA.Services.dll">
+      <publishTime>02/19/2022 13:54:06</publishTime>
+    </File>
+    <File Include="JIRA.Services.pdb">
+      <publishTime>02/19/2022 13:54:06</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <publishTime>10/22/2021 19:48:30</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>06/15/2021 15:12:46</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Options.dll">
+      <publishTime>10/22/2021 19:50:00</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Primitives.dll">
+      <publishTime>10/22/2021 19:50:40</publishTime>
+    </File>
+    <File Include="Microsoft.OpenApi.dll">
+      <publishTime>08/29/2020 16:14:12</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>03/17/2021 16:03:36</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.Swagger.dll">
+      <publishTime>09/23/2020 08:47:20</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerGen.dll">
+      <publishTime>09/23/2020 08:47:22</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerUI.dll">
+      <publishTime>09/23/2020 08:47:24</publishTime>
+    </File>
+    <File Include="System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>10/22/2021 19:40:56</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>02/19/2022 14:06:56</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
